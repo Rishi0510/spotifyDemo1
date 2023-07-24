@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:ital,wght@1,500&display=swap');
+
+body {
+    background-color: azure;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+nav ul{
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color:white
+}
+
+nav ul li {
+    padding:0 12px;
+}
+
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.container {
+    /* black wala niche gaya button+bar */
+    min-height:61vh; 
+/* pura container black */
+    background-color: black;
+    color:white;
+    display: flex;
+    font-family:'PT Sans', sans-serif;
+    margin: 23px auto;
+    width:70%;
+    padding: 20px;
+    border-radius: 12px;
+    /* background-image: url("Images/bg.jpg");
+     */
+    background-image: url("Images/jagjitJiii-removebg-preview.png");
+    background-size:contain;
+    /* background-image: url("Images/jagjit3.webp"); */
+    /* /* background-size: cover;  */
+    /* Make the image cover the entire container */ 
+    /* background-repeat: no-repeat; Prevent the image from repeating */
+    background-position: right ;
+    background-repeat: no-repeat;
+    /* background-size:  auto; */
+    /* 
+    
+It seems like you are experiencing a problem with the background image repeating multiple times and covering the background. This issue occurs because the background image is set to repeat by default. To fix this and make the image cover the entire background without repetition, you can use the background-repeat property and set it to no-repeat. Additionally, you can use the background-size property to specify how the background image should be sized. */
+
+
+}
+
+.bottom {
+    position:sticky;
+    height:130px;
+    background-color: black;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    flex-direction: column;
+}
+
+.icons {
+    margin: 15px;
+    /* button aur bar ke bich ka distance */
+}
+
+.icons i{
+    /* button pe cursor */
+    cursor: pointer;
+} 
+
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+/* issue : iske content ko center kaise krein ?
+bottom ko flexbox banalo */
+
+.home{
+    cursor: pointer;
+}
+
+.about{
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 30px;
+}
+
+.songItem {
+    height: 40px;
+    display: flex;
+    background-color: white;
+    /* width: 130%; */
+    color : black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    padding-right: 17px;
+}
+
+.songItem img {
+    width: 50px;
+    height: 35px;
+    margin : 0 23px;
+    border-radius: 34px;
+}
+
+.timeStamp{ 
+    margin: 0 25px;
+}
+
+.timeStamp i{
+    cursor: pointer;
+}
+
+.songInfo {
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
