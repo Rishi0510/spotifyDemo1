@@ -151,3 +151,68 @@ bottom ko flexbox banalo */
     transition: opacity 0.5s ease-in;
 }
 
+
+
+
+
+/* MEDIA QUERIES UPDATED ON 25 JULY 23  */
+
+
+/* Media query for screen sizes less than or equal to 768px */
+@media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 10px;
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .brand {
+      font-size: 1.1em;
+    }
+    
+    .icons {
+      margin: 10px;
+    }
+  
+    .songInfo {
+      position: static;
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+  
+  /* Media query for screen sizes less than or equal to 576px */
+  @media (max-width: 576px) {
+    .container {
+      width: 95%;
+    }
+    
+    .nav ul {
+      height: auto;
+    }
+    
+    .brand {
+      font-size: 1em;
+    }
+    
+    .songItem img {
+      width: 40px;
+      height: 30px;
+    }
+    
+    .songInfo {
+      font-size: 0.8em;
+    }
+  
+    /* Adjust the spacing between song name and master play buttons */
+    .bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .icons {
+      margin-bottom: 10px;
+    }
+  }
+  
